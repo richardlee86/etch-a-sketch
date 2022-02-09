@@ -9,15 +9,32 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="size">
+            <div class = 'radioDiv'>
+                <input type="radio" name="size" id="sixteen" value = '16' checked>
+                <label for="sixteen">16 X 16</label>
+            </div>
+            <div class = 'radioDiv'>
+                <input type="radio" name="size" id="sixtyFour" value="64">
+                <label for="64">64 X 64</label>
+            </div>
+            <div class = 'radioDiv'>
+                <input type="radio" name="size" id="oneTwenty" value="120">
+                <label for="120">120 X 120</label>
+            </div>
+            
+            
+            
+        </div>
         <div class="container">
 
         </div>
-        <button class="reset">Reset</button>
-        <label for="color">Choose a Color Mode</label>
-        <select name="color" id="colorPicker">
-            <option value="default">Default</option>
-            <option value="rainbow">Rainbow</option>
-        </select>
+        <div class="buttonDiv">
+            <button class="reset">Reset</button>        
+            <button id="rainbow">Rainbow Mode</button>
+            <button class="standard">Standard Mode</button>
+        </div>
+        
     </div>
     
 
