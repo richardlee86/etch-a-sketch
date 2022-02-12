@@ -19,8 +19,7 @@ const rainbowRGB = () => {
 
 //create divs and append them to container div
 const addDivs = (size) => {
-    for (let i = 0; i < 1600; i++) {        
-        
+    for (let i = 0; i < 26000; i++) {       
         const div = document.createElement('div');
         div.className = 'etchDiv';
         div.style.backgroundColor = 'white'; 
@@ -34,7 +33,7 @@ const addDivs = (size) => {
 }
 
 const addRainBowDivs = (size) => {
-    for (let i = 0; i < 1600; i++) {
+    for (let i = 0; i < 26000; i++) {
         const div = document.createElement('div');
         div.className = 'etchDiv';
         div.style.backgroundColor = 'white'; 
@@ -44,7 +43,8 @@ const addRainBowDivs = (size) => {
         div.addEventListener('mouseover', function(){
             div.style.backgroundColor = rainbowRGB();
         });   
-    }     
+    } 
+        
 }
 
 
@@ -58,7 +58,7 @@ let oneTwenty = document.querySelector('#oneTwenty');
 console.log(sixteen.checked);
 
 x.addEventListener('mousedown', function(){ 
-        location.reload(true);                 
+    container.innerHTML = '';                    
 });
 
 x.addEventListener('mouseup', function(){
@@ -72,8 +72,16 @@ x.addEventListener('mouseup', function(){
 });
 
 y.addEventListener('mousedown', function(){    
-    location.reload(true);
+    container.innerHTML = '';
 });
 
-y.addEventListener('mouseup', () => addDivs(21.25));
+y.addEventListener('mouseup', () => {
+    if(sixteen.checked){
+        addDivs(21.25);
+    } else if (sixtyFour.checked){
+        addDivs(5.32);
+    } else if(oneTwenty.checked){
+        addDivs(2.83);
+    }
+});
 
