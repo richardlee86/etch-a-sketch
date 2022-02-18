@@ -1,10 +1,10 @@
 body {
-    background-color: lightcyan;
+    background-color: rgb(144, 248, 248);
 }
 .size {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 2%;
     width: 100%;
     height: 5rem;
     gap: 1.4rem;
@@ -50,6 +50,7 @@ body {
     height: 340px;
     width: 340px;    
     overflow: hidden;
+    border: 1px solid black;
 }
 
 .etchDiv{
